@@ -1,0 +1,154 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5rem; 
+    font-family: 'Work Sans', sans-serif;
+    position: relative;
+    z-index: 20;
+}
+.left {
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    display: flex;
+}
+.nav-link>li {
+    list-style: none;
+}
+.nav-link>li>a {
+    text-decoration: none;
+    list-style: none;
+    color: #268282;
+    font-size: 1rem;
+    margin: 0 .8rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 10;
+}
+.nav-link>li>a:hover {
+    opacity: .7;
+    transition: all .4s ease-in;
+}
+.btn {
+    margin: 0 .6rem;
+}
+.btn1 {
+    border: 1.5px solid #268282;
+    border-radius: 9px;
+    outline: none;
+    background-color: transparent;
+    color: #268282;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    position: relative;
+    z-index: 10;
+}
+.btn2 {
+    border-radius: 9px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #268282;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .6rem 1rem;
+    position: relative;
+    z-index: 10;
+}
+.btn1:hover {
+background-color: #268282;
+color: white;
+transition: all .4s ease-in;
+}
+.btn2:hover {
+    opacity: .7;
+    transition: all .4s ease-in;
+}
+.menu {
+    display: none;
+}
+
+@media screen and (max-width:1168px) {
+    nav {
+        padding: 1.5rem 3rem;
+    }
+    
+    #check:checked ~ .nav-links {
+        left: 0%;
+    }
+    .ham {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        outline: none;
+         height: 25px;
+         width: 29px;
+         position: relative;
+     }
+
+}
+
+@media screen and (max-width:992px) {
+    .title>img {
+        width: 6rem;
+    }
+    nav {
+        padding: 1.5rem 2rem;
+    }
+    .nav-link {
+        display: none;
+    }
+    .login {
+        display: none;
+    }
+    .menu>svg {
+        font-size: 1.5rem;
+      color: #268282 ;
+        }
+         .menu {
+          display: block;
+         
+          background: none;
+          outline: none;
+          border: none;
+         }
+        .nav-link-mobile {
+          position: absolute;
+          display: block;
+          list-style: none;
+          left: -2rem;
+        top: 4.5rem;
+          transition: all 1s ease-in;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin: auto;
+          width: 100%;
+       background: #268282;
+       
+        }
+        ul li {
+          padding: 20px;
+          width: 100%;
+          transition: all .7s ease-in;
+          text-align: center;
+        }ul>li>a {
+            text-decoration: none;
+            color: white;
+            margin: auto;
+        }
+        ul>li>a:hover {
+          color: black;
+        }
+        .link {
+          color: white;
+        }
+        .nav-link {
+            display: none;
+          }
+}
